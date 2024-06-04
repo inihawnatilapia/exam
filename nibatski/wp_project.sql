@@ -4,7 +4,7 @@
 --
 -- Host: 127.0.0.1
 -- Generation Time: Mar 31, 2022 at 08:50 PM
--- Server version: 10.1.34-MariaDB
+-- Server version: 10.1.34-EliotDB
 -- PHP Version: 7.2.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -293,34 +293,32 @@ CREATE TABLE `user` (
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`id`, `email`, `password`, `timestamp`) VALUES
-(18, 'eliot@gmail.com', '123', '2021-10-27 10:09:46'),
+INSERT INTO `user` (`id`, `email`, `password`, `timestamp`) VALUES (18, 'eliot@gmail.com', '123', '2021-10-27 10:09:46');
 
 -- --------------------------------------------------------
-
---
 -- Table structure for table `user_data`
---
-
 CREATE TABLE `user_data` (
-  `id` int(10) NOT NULL,
-  `user_id` varchar(100) NOT NULL,
-  `firstname` varchar(200) NOT NULL,
-  `lastname` varchar(200) NOT NULL,
-  `address` varchar(300) NOT NULL,
-  `city` varchar(200) NOT NULL,
-  `state` varchar(200) NOT NULL,
-  `country` varchar(200) NOT NULL,
-  `zip_code` varchar(200) NOT NULL,
-  `mobile-number` varchar(200) NOT NULL
+ `id` int(10) NOT NULL AUTO_INCREMENT,
+ `user_id` varchar(100) NOT NULL,
+ `firstname` varchar(200) NOT NULL,
+ `lastname` varchar(200) NOT NULL,
+ `address` varchar(300) NOT NULL,
+ `city` varchar(200) NOT NULL,
+ `state` varchar(200) NOT NULL,
+ `country` varchar(200) NOT NULL,
+ `zip_code` varchar(200) NOT NULL,
+ `mobile_number` varchar(200) NOT NULL,
+ PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
 
 --
 -- Dumping data for table `user_data`
 --
 
-INSERT INTO `user_data` (`id`, `user_id`, `firstname`, `lastname`, `address`, `city`, `state`, `country`, `zip_code`, `mobile-number`) VALUES
-(20, 'eliot@gmail.com', 'melvs', 'eliot', 'cj', 'nibats', 'nibots', 'ph', '123', '123456789');
+INSERT INTO `user_data` (`id`, `user_id`, `firstname`, `lastname`, `address`, `city`, `state`, `country`, `zip_code`, `mobile_number`) 
+VALUES (20, 'eliot@gmail.com', 'melvs', 'eliot', 'cj', 'nibats', 'nibots', 'ph', '123', '123456789');
 
 --
 -- Indexes for dumped tables
@@ -433,6 +431,8 @@ ALTER TABLE `user`
 ALTER TABLE `user_data`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 COMMIT;
+DROP PRIMARY KEY, ADD PRIMARY KEY (`id`);
+
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

@@ -21,7 +21,7 @@
           </div>
     
           <div class="logo">
-            <a href="home.php"><img src="images/logo.jpg" alt="" /></a>
+            <a href="home.php"><img src="images/logo(1).jpg" alt="" /></a>
           </div>
     
           <navigation class="links" id="navigation_links">

@@ -7,7 +7,7 @@
 </head>
 <body>
     <footer>
-      <a href="home.php"><img src="images/logo.jpg" alt="" style="width: 200px"></a>
+      <a href="home.php"><img src="images/logo(1).jpg" alt="" style="width: 200px"></a>
       <nav class="footer-social">
         <a href="#"
         ><img src="images/instagram.png" alt="" style="width: 48px"
@@ -21,11 +21,11 @@
       </nav>
       
       <div class="copy">
-        <p>Copyright&copy 2023. All Rights Reserved</p>
+        <p>Copyright&copy 2024. All Rights Reserved</p>
       </div>
       <div class="faq-contact">
         <a href="#">FAQ</a>
-        <a href="#">CONTACT</a>
+        <a href="contact.php">CONTACT</a>
       </div>
     </footer>
 </body>
